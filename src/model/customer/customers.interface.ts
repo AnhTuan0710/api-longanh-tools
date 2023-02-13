@@ -1,14 +1,14 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 
-export class PostModel {
+export class CustomerModel {
   @ApiPropertyOptional({ type: Number })
-  id?: number;
-  @ApiProperty({ type: String, format: 'date-time' })
-  date: Date;
+  customer_id?: number;
   @ApiProperty({ type: String })
-  title: string;
+  customer_name: string;
   @ApiProperty({ type: String })
-  body: string;
+  customer_address: string;
   @ApiProperty({ type: String })
-  category: string;
+  customer_phone: string;
+  @ApiProperty({ type: String })
+  amount_debt: string;
 }

@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { CustomersService } from './customers.service';
-import { CustomersController } from './customers.controller';
+import { CustomersController } from '../../controller/customer/customers.controller';
+import { CustomersService } from '../../service/customer/customers.service';
 
 @Module({
   providers: [CustomersService],
